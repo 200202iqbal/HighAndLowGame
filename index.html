@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Muhammad Iqbal Tawakal_200202">
+    <meta name="description" content="https://github.com/200202iqbal">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Righteous&display=swap" rel="stylesheet">
+    <title>High and Low Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="screenGame">
+            <div class="titleScreenGame">
+                <span class="titleScreen">High and Low Game</span>
+            </div>
+            <p id="scores">Scores : <span id="scoresValue"></span></p>
+            <p id="number"></p>
+            <p id="text"> High か Low　か ?</p>
+            <div class = "boxContainer">
+                <div class = "box"><button id = "box-low" onclick="low()"> Low </button></div>
+                <div class = "box"><button id = "box-draw" onclick="draw()"> Draw </button></div>
+                <div class = "box"><button id = "box-high" onclick="high()"> High </button></div>
+                <div class ="box"><button id ="box-next" onclick="next()">Next</button></div>
+                <div class = "box"><button id = "box-retry" onclick="retry()"> もう一度 </button></div>
+            </div>
+        <p id="resultText"></p>
+            
+        </div>
+        <div class="footer">
+            <p class="footer" id="footerName">Copyrights ムハンマドイクバルタワカル / 200202</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

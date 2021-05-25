@@ -1,0 +1,143 @@
+body
+{
+    background-image: url(../img/double-bubble.png);
+    font-family: 'Righteous', cursive;
+}
+.container
+{
+    background-color: white;
+    width: 500px;
+    margin:auto;
+    margin-top: 200px;
+    box-shadow : 0px 10px 60px rgba(0, 0, 0, 0.884);
+}
+.titleScreenGame
+{
+    background-color: #ffb703;
+    padding: 4px;
+
+    margin:0;
+    box-sizing: border-box;
+}
+.boxContainer
+{
+    margin-left: 15px;
+}
+.titleScreen
+{
+    color:#003049;
+    font-size: 25px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.boxContainer .box
+{
+    display: inline-block;
+}
+#box-low
+{
+    background-color:#78e08f;
+    border-width: 1px;
+    border-color: #78e08f;
+    padding: 5pt;
+    border-radius: 5px;
+    color: white;
+}
+#box-draw
+{
+    background-color:#60a3bc;
+    border-width: 1px;
+    border-color: #60a3bc;
+    padding: 5pt;
+    border-radius: 5px;
+    color:white
+}
+#box-high
+{
+    background-color: #38ada9;
+    border-width: 1px;
+    border-color:#38ada9;
+    padding: 5pt;
+    border-radius: 5px;
+    color:white;
+}
+#box-next
+{
+    width: 60px;
+    background-color: #e63946;
+    border: 0px;
+    padding: 5pt;
+    border-radius: 5px;
+    color:white;   
+    
+}
+#box-next:hover
+{
+    animation-name:boxNext;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+@keyframes boxNext 
+{
+        0%
+        {
+            background-color: #e63946;
+            color:white;
+            width: 60px;
+        }
+        100%
+        {
+            background-color: #ffffff; 
+            color:black;
+            border-top: 1px solid #e63946 ;
+            border-bottom: 1px solid #e63946;
+            width:100px;
+            
+        }
+}
+#box-retry
+{
+    background: #ffffff;
+    border-width: 1px;
+    border-color: #38ada9;
+    padding: 4pt;
+    border-radius: 5px;
+    color: #38ada9;
+}
+#box-retry:hover
+{
+    background-color:aliceblue;
+}
+#number
+{
+    margin-left:15px;
+    font-size: 25pt;
+}
+#scores
+{
+    margin-left: 15px;
+    font-size: 10pt;
+}
+#text
+{
+    margin-left:15px;
+}
+#resultText
+{
+    font-size:30pt;
+    margin-top: 15pt;
+    margin-left: 15px;
+}
+.footer
+{
+    background-color:#2A2B2A;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+}
+.footer #footerName
+{
+    font-size: 14px;
+    color:#f1faee;
+    text-align: center;
+    padding:3px;
+}
