@@ -137,11 +137,11 @@ function randomNumber()
 {
     //browser Random number
     numberValueElement = document.getElementById("number");
-    numberRandom = Math.floor(Math.random()*13);
+    numberRandom = Math.floor(Math.random()*3);
     numberValueElement.innerHTML = numberRandom;
       
     //user Random number
-    userRandomNumber = Math.floor(Math.random()*13); 
+    userRandomNumber = Math.floor(Math.random()*3); 
     console.log("number random ", numberRandom);
     console.log("user random ", userRandomNumber);
 }
