@@ -1,10 +1,10 @@
    //browser Random number
     var numberValueElement = document.getElementById("number");
-    var numberRandom = Math.floor(Math.random()*13);
+    var numberRandom = Math.floor(Math.random()*3);
     numberValueElement.innerHTML = numberRandom;
       
     //user Random number
-    var userRandomNumber = Math.floor(Math.random()*13); 
+    var userRandomNumber = Math.floor(Math.random()*3); 
     console.log(numberRandom);
     console.log(userRandomNumber); 
     
