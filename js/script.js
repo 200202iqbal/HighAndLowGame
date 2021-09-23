@@ -33,14 +33,14 @@ function low()
     if( userRandomNumber < numberRandom)
     {
         scoreValue++;
-        resultTextElement.innerHTML = "Win !!";
+        resultTextElement.innerHTML = "Win !! [勝った !!]";
         scoreValueElement.innerHTML = scoreValue;
         var setValue = sessionStorage.setItem("scoreCount", scoreValue);;
         buttonNext();
     }
     else
     {
-        resultTextElement.innerHTML = "Lose !!";
+        resultTextElement.innerHTML = "Lose !! [負けた !!]";
         buttonHidden();
         sessionStorage.clear();
     }
@@ -52,14 +52,14 @@ function draw()
     if( userRandomNumber == numberRandom)
     {
         scoreValue++;
-        resultTextElement.innerHTML = "Win !!";
+        resultTextElement.innerHTML = "Win !! [勝った !!]";
         scoreValueElement.innerHTML = scoreValue;
         var setValue = sessionStorage.setItem("scoreCount", scoreValue);
         buttonNext();
     }
     else
     {
-        resultTextElement.innerHTML = "Lose !!";
+        resultTextElement.innerHTML = "Lose !! [負けた !!]";
         buttonHidden();
         sessionStorage.clear();
     }
@@ -71,7 +71,7 @@ function high()
     if( userRandomNumber > numberRandom)
     {
         scoreValue++;
-        resultTextElement.innerHTML = "Win !!";
+        resultTextElement.innerHTML = "Win !! [勝った !!]";
         scoreValueElement.innerHTML = scoreValue;
         var setValue = sessionStorage.setItem("scoreCount", scoreValue);
         buttonNext();
@@ -79,7 +79,7 @@ function high()
     }
     else
     {
-        resultTextElement.innerHTML = "Lose !!";
+        resultTextElement.innerHTML = "Lose !! [負けた !!]";
         buttonHidden();
         sessionStorage.clear();
     }
