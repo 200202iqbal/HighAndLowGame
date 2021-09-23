@@ -21,7 +21,7 @@ buttonNextGame.hidden = true;
 var resultTextElement = document.getElementById("resultText");
 var scoreValueElement = document.getElementById("scoresValue");
 var scoreValue = 0;
-var flag = 0;
+
 var setValue = sessionStorage.setItem("scoreCount", scoreValue);
 var getValue = sessionStorage.getItem("scoreCount");
 
@@ -31,7 +31,7 @@ function low() {
     scoreValue++;
     resultTextElement.innerHTML = "Win !! [勝った !!]";
     scoreValueElement.innerHTML = scoreValue;
-    var setValue = sessionStorage.setItem("scoreCount", scoreValue);
+    setValue = sessionStorage.setItem("scoreCount", scoreValue);
     buttonNext();
   } else {
     resultTextElement.innerHTML = "Lose !! [負けた !!]";
@@ -45,7 +45,7 @@ function draw() {
     scoreValue++;
     resultTextElement.innerHTML = "Win !! [勝った !!]";
     scoreValueElement.innerHTML = scoreValue;
-    var setValue = sessionStorage.setItem("scoreCount", scoreValue);
+    setValue = sessionStorage.setItem("scoreCount", scoreValue);
     buttonNext();
   } else {
     resultTextElement.innerHTML = "Lose !! [負けた !!]";
@@ -59,7 +59,7 @@ function high() {
     scoreValue++;
     resultTextElement.innerHTML = "Win !! [勝った !!]";
     scoreValueElement.innerHTML = scoreValue;
-    var setValue = sessionStorage.setItem("scoreCount", scoreValue);
+    setValue = sessionStorage.setItem("scoreCount", scoreValue);
     buttonNext();
   } else {
     resultTextElement.innerHTML = "Lose !! [負けた !!]";
@@ -95,22 +95,6 @@ function retry() {
 // Retrieve
 scoreValueElement.innerHTML = sessionStorage.getItem("scoreCount");
 
-// function scoreFlag(flag)
-// {
-//     if (flag == 1)
-//     {
-//         scoreValue++;
-//     }else
-//     {
-//         scoreValue = 0;
-//     }
-//     return scoreValue;
-// }
-// function showscore()
-// {
-//     var score = sessionStorage.getItem("scoreCount");
-//     console.log(score);
-// }
 function randomNumber() {
   //browser Random number
   numberValueElement = document.getElementById("number");
